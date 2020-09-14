@@ -8,7 +8,7 @@
 
     <nuxt-link class="card-image" :to="{name: 'projects-slug', params: {slug: item.slug}}">
       <figure>
-        <img src="https://placehold.it/1200x600" alt="card image alt">
+        <img :src="item.banner" :alt="item.title">
       </figure>
     </nuxt-link>
   </article>
@@ -16,25 +16,28 @@
 
 <script>
 export default {
-    props: ['item']
-}
+  props: ["item"],
+};
 </script>
 
 <style lang="scss" scoped>
-.layer-card {
+@media only screen and (min-width: 850px) {
+  .layer-card {
     display: flex;
     justify-content: space-between;
-    margin-bottom: $pad*10;
+    margin-bottom: $pad * 10;
 
     &:nth-child(odd) {
-        flex-direction: row-reverse;
+      flex-direction: row-reverse;
     }
-}
-.card-image {
+  }
+  .card-image {
     width: 60%;
-}
+  }
 
-.card-text {
+  .card-text {
     width: 35%;
+  }
 }
 </style>
+

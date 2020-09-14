@@ -10,7 +10,7 @@
         "build": "nuxt build",
         "start": "nuxt start",
         "generate": "nuxt generate",
-        "deploy": "./node_modules/push-dir/bin/push-dir --dir=dist --branch=gh-pages --cleanup"
+        "deploy": "./node_modules/push-dir/bin/push-dir --dir=dist --branch=master --cleanup"
     },
     "dependencies": {
         "@nuxtjs/style-resources": "^0.1.2",

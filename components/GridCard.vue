@@ -4,7 +4,7 @@
       :to="{name: 'projects-slug', params: {slug: item.slug}}"
       :key="item.slug"
     >
-      <img class="item-img" src="item.banner" :alt="item.title">
+      <img class="item-img" :src="item.banner" :alt="item.title">
       <h2>{{item.title}}</h2>
     </nuxt-link>
   </article>

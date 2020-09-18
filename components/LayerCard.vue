@@ -7,8 +7,8 @@
     </div>
 
     <nuxt-link class="card-image" :to="{name: 'projects-slug', params: {slug: item.slug}}">
-      <figure>
-        <img :src="item.banner" :alt="item.title">
+      <figure >
+        <img :src="item.thumbnail" :alt="item.title">
       </figure>
     </nuxt-link>
   </article>

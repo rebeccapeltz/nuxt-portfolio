@@ -1,8 +1,7 @@
 export default {
-  mode: "universal",
   target: "static",
   router: {
-    base: "nuxt-portfolio",
+    base: "/nuxt-portfolio/",
   },
   generate: {
     routes: [
@@ -14,6 +13,9 @@ export default {
       "/projects/project-six",
       "/projects/project-seven",
       "/projects/project-eight",
+      "/projects/project-nine",
+      "/projects/project-ten",
+      "/projects/project-eleven",
     ],
   },
   /*
@@ -60,8 +62,16 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/style-resources"],
-
+  modules: ["@nuxtjs/style-resources", "@nuxtjs/fontawesome"],
+  // cloudinary: {
+  //   cloudName: 'picturecloud7',
+  // },
+  fontawesome: {
+    icons: {
+      solid: true,
+      brands: true,
+    },
+  },
   styleResources: {
     scss: [
       "./assets/styles/mixins/_variables.scss",

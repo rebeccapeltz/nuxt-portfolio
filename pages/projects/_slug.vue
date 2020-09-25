@@ -1,17 +1,14 @@
 <template lang="html">
   <div class="inner-column">
 
-    <!-- <cld-image cloudName="demo" publicId="sample">
-      <cld-transformation angle="-45" />
-      <cld-transformation effect="trim" angle="45" crop="scale" width="600" />
-      <cld-transformation overlay="text:Arial_100:Hello" />
-    </cld-image> -->
+    <cld-image v-if="project.media === 'image'" :publicId="project.publicId">
+      <cld-transformation  crop="pad" background="auto:border" height="500" width="1200" />
+    </cld-image>
 
-    <img v-if="project.media === 'image'"  :src="project.banner" :alt="project.title">
-    <video v-if="project.media === 'video'" controls>
-      <source :src="project.video" >
-      Your browser does not support the video tag.
-    </video>
+    <cld-video v-if="project.media === 'video'" controls :publicId="project.publicId" 
+      :poster="project.banner">
+        <cld-transformation  crop="pad" background="blurred" height="500" width="1200" />
+    </cld-video>
 
     <h1 class="title">{{project.title}}</h1>
 
@@ -21,6 +18,8 @@
 </template>
 
 <script>
+import Cloudinary, { CldImage } from "cloudinary-vue";
+
 export default {
   head() {
     return {
@@ -52,10 +51,10 @@ export default {
     };
   },
   // created: function(){
-// const url = this.$cloudinary()
-//                 .url('sample', { crop: 'scale', width: 200 })
-//                 console.log(url)
-  // },
+  // const url = this.$cloudinary()
+  //                 .url('sample', { crop: 'scale', width: 200 })
+  //                 console.log(url)
+  //   },
   computed: {
     project() {
       return this.$store.state.projects.all.find(

@@ -58,14 +58,12 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: "@/plugins/vue-cloudinary.js", mode: "server" }],
   /*
    ** Nuxt.js modules
    */
   modules: ["@nuxtjs/style-resources", "@nuxtjs/fontawesome"],
-  // cloudinary: {
-  //   cloudName: 'picturecloud7',
-  // },
+ 
   fontawesome: {
     icons: {
       solid: true,

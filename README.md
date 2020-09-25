@@ -6,17 +6,28 @@
 
 ``` bash
 # install dependencies
-$ yarn install
+$ npm install
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+$ npm dev##
 
 # build for production and launch server
-$ yarn build
-$ yarn start
+$ npm build
+$ npm start
 
 # generate static project
-$ yarn generate
+$ npm generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+
+## Github deployment
+
+Installed the `gh-pages` library in devDependencies.  Add router base to `nuxt.config.js` where the base is the repo name on github.
+
+```js
+router: {
+    base: "/nuxt-portfolio/",
+  },
+```
+

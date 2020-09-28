@@ -26,9 +26,18 @@
 </template>
 
 <script>
-import Cloudinary, { CldImage } from 'cloudinary-vue'
+import Cloudinary, {
+  CldImage,
+  CldVideo,
+  CldTransformation,
+} from 'cloudinary-vue'
 
 export default {
+  // components: {
+  //   CldImage,
+  //   CldVideo,
+  //   CldTransformation
+  // },
   head() {
     return {
       title: this.project.title,
@@ -58,11 +67,11 @@ export default {
       slug: this.$route.params.slug,
     }
   },
-  // created: function(){
-  // const url = this.$cloudinary()
-  //                 .url('sample', { crop: 'scale', width: 200 })
-  //                 console.log(url)
-  //   },
+  created: function () {
+    console.log("slug created")
+    // const url = this.$cloudinary().url('sample', { crop: 'scale', width: 200 })
+    // console.log('cloudinary url', url)
+  },
   computed: {
     project() {
       return this.$store.state.projects.all.find(

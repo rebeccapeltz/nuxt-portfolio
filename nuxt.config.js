@@ -68,7 +68,8 @@ export default {
     '@nuxtjs/cloudinary'
   ],
   cloudinary: {
-    cloudName: 'picturecloud7'
+    cloudName: 'picturecloud7',
+    // useComponent: true
   },
   fontawesome: {
     icons: {

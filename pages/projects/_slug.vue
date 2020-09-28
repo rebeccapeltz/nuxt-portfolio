@@ -10,6 +10,14 @@
         <cld-transformation  crop="pad" background="blurred" height="500" width="1200" />
     </cld-video>
 
+    <img v-if="project.media === 'image'"  :src="project.banner" :alt="project.title">
+    <video v-if="project.media === 'video'" controls>
+      <source :src="project.video" >
+      Your browser does not support the video tag.
+    </video>
+
+
+
     <h1 class="title">{{project.title}}</h1>
 
     <p>{{project.content}}</p>
@@ -18,7 +26,7 @@
 </template>
 
 <script>
-import Cloudinary, { CldImage } from "cloudinary-vue";
+import Cloudinary, { CldImage } from 'cloudinary-vue'
 
 export default {
   head() {
@@ -27,28 +35,28 @@ export default {
       description: this.project.content,
       meta: [
         {
-          name: "twitter:title",
+          name: 'twitter:title',
           content: this.project.title,
         },
         {
-          name: "twitter:description",
+          name: 'twitter:description',
           content: this.project.content,
         },
         {
-          name: "twitter:image",
-          content: "http://placehold.it/1200x600",
+          name: 'twitter:image',
+          content: 'http://placehold.it/1200x600',
         },
         {
-          name: "twitter:card",
-          content: "summary_large_image",
+          name: 'twitter:card',
+          content: 'summary_large_image',
         },
       ],
-    };
+    }
   },
   data() {
     return {
       slug: this.$route.params.slug,
-    };
+    }
   },
   // created: function(){
   // const url = this.$cloudinary()
@@ -58,16 +66,16 @@ export default {
   computed: {
     project() {
       return this.$store.state.projects.all.find(
-        (project) => project.slug === this.slug
-      );
+        project => project.slug === this.slug
+      )
     },
     relatedProjects() {
       return this.$store.state.projects.all.filter(
-        (project) => project.slug !== this.slug
-      );
+        project => project.slug !== this.slug
+      )
     },
   },
-};
+}
 </script>
 
 <style lang="css" scoped>

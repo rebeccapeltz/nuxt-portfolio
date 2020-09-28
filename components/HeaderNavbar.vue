@@ -22,20 +22,20 @@ export default {}
 
 <style lang="scss" scoped>
 .logo {
-    padding: $pad 0;
+  padding: $pad 0;
 }
 .header-nav {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .main-menu {
-    display: flex;
+  display: flex;
 }
 .menu-item {
-    padding: $pad;
+  padding: $pad;
 
-    &:last-child {
-        padding-right: 0;
-    }
+  &:last-child {
+    padding-right: 0;
+  }
 }
 </style>

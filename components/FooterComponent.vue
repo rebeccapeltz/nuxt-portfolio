@@ -14,6 +14,6 @@ export default {}
 
 <style lang="scss" scoped>
 .footer-component {
-    text-align: center;
+  text-align: center;
 }
 </style>

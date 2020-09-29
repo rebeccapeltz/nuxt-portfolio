@@ -10,11 +10,11 @@
         <cld-transformation  crop="pad" background="blurred" height="500" width="1200" />
     </cld-video>
 
-    <img v-if="project.media === 'image'"  :src="project.banner" :alt="project.title">
+    <!-- <img v-if="project.media === 'image'"  :src="project.banner" :alt="project.title">
     <video v-if="project.media === 'video'" controls>
       <source :src="project.video" >
       Your browser does not support the video tag.
-    </video>
+    </video> -->
 
 
 
@@ -26,11 +26,11 @@
 </template>
 
 <script>
-import Cloudinary, {
-  CldImage,
-  CldVideo,
-  CldTransformation,
-} from 'cloudinary-vue'
+// import Cloudinary, {
+//   CldImage,
+//   CldVideo,
+//   CldTransformation,
+// } from 'cloudinary-vue'
 
 export default {
   // components: {

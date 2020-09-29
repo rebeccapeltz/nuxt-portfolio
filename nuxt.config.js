@@ -3,7 +3,9 @@ export default {
   router: {
     base: '/nuxt-portfolio/'
   },
+  components: true,
   generate: {
+    crawler: false,
     routes: [
       '/projects/project-one',
       '/projects/project-two',
@@ -69,7 +71,7 @@ export default {
   ],
   cloudinary: {
     cloudName: 'picturecloud7',
-    // useComponent: true
+    useComponent: true
   },
   fontawesome: {
     icons: {

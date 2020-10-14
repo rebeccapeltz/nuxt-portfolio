@@ -9,6 +9,9 @@
 </template>
 
 <script>
+// import cloudinary from "cloudinary-core";
+// import cloudinaryVideoPlayer from "cloudinary-video-player"; 
+// import "cloudinary-video-player/dist/cld-video-player.css";
 export default {
   props: ['project'],
   data() {

@@ -15,7 +15,11 @@
       :to="{ name: 'projects-slug', params: { slug: item.slug } }"
     >
       <figure>
-        <cld-image v-if="item.media === 'image'" :publicId="item.publicId" :alt="item.title">
+        <cld-image
+          v-if="item.media === 'image'"
+          :publicId="item.publicId"
+          :alt="item.title"
+        >
           <cld-transformation
             crop="pad"
             background="auto:border"
@@ -23,14 +27,23 @@
             width="1200"
           />
         </cld-image>
-        <cld-video v-if="item.media === 'video'"  :publicId="item.publicId" height="800" width="1200" format="jpg" crop="pad" background="black" >
-           <cld-transformation
-            crop="pad"
+        <cld-video
+          v-if="item.media === 'video'"
+          :publicId="item.publicId"
+          height="800"
+          width="1200"
+          format="jpg"
+          crop="pad"
+          background="black"
+        >
+          <cld-poster >
+            <cld-transformation  crop="pad"
             background="auto:border"
             height="800"
-            width="1200"
-          />
-          </cld-video>
+            width="1200"/>
+          </cld-poster>
+         
+        </cld-video>
 
         <!-- <img :src="item.thumbnail" :alt="item.title"> -->
       </figure>
@@ -40,7 +53,7 @@
 
 <script>
 export default {
-  props: ['item'],
+  props: ['item']
 }
 </script>
 

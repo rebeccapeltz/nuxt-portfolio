@@ -12,10 +12,13 @@
     "@nuxtjs/cloudinary": "0.0.11",
     "@nuxtjs/style-resources": "^0.1.2",
     "cloudinary": "^1.23.0",
+    "cloudinary-core": "^2.11.3",
+    "cloudinary-video-player": "^1.4.3",
     "dotenv": "^8.2.0",
     "node-sass": "^4.12.0",
     "nuxt": "^2.14.6",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.14.0",

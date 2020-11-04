@@ -2,7 +2,7 @@
   <header class="inner-column header-nav">
 
     <nuxt-link :to="{name: 'index'}" class="logo text-lg">
-      <cld-image publicId="vuejs-portfolio/cat-logo" height="80" crop="scale" effect="replace_color:black:50:DCB363" />
+      <cld-image publicId="vuejs-portfolio/cat-logo" height="80"  crop="scale"  />
     </nuxt-link>
 
     <nav class="main-menu" role="navigation">
@@ -31,18 +31,21 @@ export default {}
 .header-nav {
   display: flex;
   justify-content: space-between;
-  margin-right: 1rem;
+  width: "80%";
 }
 .main-menu {
   display: flex;
 }
 .menu-item {
   padding: 10px;
+  color: #d8ac52;
 
   &:last-child {
     padding-right: 0;
   }
   font-family: 'Yatra One';
   font-size: 30px;
+  color: '#e4cc8c';
 }
+
 </style>

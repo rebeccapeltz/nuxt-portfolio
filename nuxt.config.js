@@ -1,6 +1,7 @@
 export default {
   env: {
-    googleApiKey: process.env.GOOGLE_API_KEY
+    googleApiKey: process.env.GOOGLE_API_KEY,
+    cldCloud: "picturecloud7"
   },
   target: 'static',
   router: {

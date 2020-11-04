@@ -23,8 +23,8 @@ export default {
     return {
       slug: this.$route.params.slug,
       cld: null, //Cloudinary object,
-      demoPlayer: null, //video player
-      isVideoPlayerLoaded: false,
+      demoPlayer: null //video player
+     
     }
   },
   head() {
@@ -82,7 +82,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-/* .page-enter-active {
+ .page-enter-active {
     animation: acrossIn .40s ease-out both;
   }
   .page-leave-active {
@@ -103,5 +103,5 @@ export default {
     100% {
       transform: translate3d(100%, 0, 0);
     }
-  } */
+  } 
 </style>

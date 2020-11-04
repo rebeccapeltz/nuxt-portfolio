@@ -17,14 +17,14 @@ export default {
   data() {
     return {
       cld: null, //Cloudinary object,
-      demoPlayer: null, //video player
-      isVideoPlayerLoaded: false,
+      demoPlayer: null //video player
+    
     }
   },
   mounted: function () {
     if (this.project.media === 'video') {
       this.cld = cloudinary.Cloudinary.new({
-        cloud_name: 'picturecloud7',
+        cloud_name: process.env.cldCloud,
         secure: true,
       })
       this.demoPlayer = this.cld.videoPlayer('demo-player')

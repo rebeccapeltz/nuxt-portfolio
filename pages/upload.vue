@@ -54,7 +54,7 @@ export default {
             console.log('callback for UW')
             this.uploadWidget = cloudinary.createUploadWidget(
               {
-                cloudName: 'picturecloud7',
+                cloudName: process.env.cldCloud,
                 uploadPreset: 'vuejs-portfolio',
                 sources: ['local', 'url', 'image_search'],
                 googleApiKey: process.env.googleApiKey,

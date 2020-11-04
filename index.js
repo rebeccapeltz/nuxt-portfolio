@@ -13,7 +13,7 @@ cloudinary.api
       height: 500,
       width: 1200,
       crop: 'pad',
-      background: 'blurred'
+      background: 'auto:border'
     }
   })
   .then(uploadResult => console.log(uploadResult))

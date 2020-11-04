@@ -1,5 +1,5 @@
 import Vue from 'vue'
 import Cloudinary from "cloudinary-vue";
 Vue.use(Cloudinary, {
-  configuration: { cloudName: "picturecloud7" }
+  configuration: { cloudName: process.env.cldCloud }
 });

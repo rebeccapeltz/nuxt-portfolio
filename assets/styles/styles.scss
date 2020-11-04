@@ -67,6 +67,8 @@ body {
   margin: 0;
   padding: 0;
   cursor: default;
+  color: white;
+  background-color: black;
 }
 
 #app {
@@ -110,6 +112,8 @@ h1 {
   min-width: 480px;
   font-size: 40px;
   padding: 20px 0;
+  color: #d8ac52;
+
 }
 
 h2 {
@@ -143,7 +147,7 @@ p {
 }
 
 .inner-column {
-  width: 98%;
+  width: 80%;
   max-width: 1560px;
   margin-right: auto;
   margin-left: auto;

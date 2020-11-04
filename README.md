@@ -34,6 +34,7 @@ router: {
 Obtain a key if you want to use google search in the upload widget: https://developers.google.com/custom-search/
 
 export GOOGLE_API_KEY=<key from google>
+in the nuxt.config this is aliased as googleApiKey so it appears in code as process.env.googleApiKey
 
 ## Deploy to netlify with CLI
 https://5f7519f1ed608c3fa70c7236--sad-colden-25eb29.netlify.app/

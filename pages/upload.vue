@@ -5,8 +5,11 @@
     <button v-on:click="openWidget" class="cloudinary-button">
       Upload files
     </button>
-    <img v-if="uploadedImage" :src="uploadedImage.secure_url" alt="Uploaded Image">
-
+    <img
+      v-if="uploadedImage"
+      :src="uploadedImage.secure_url"
+      alt="Uploaded Image"
+    />
   </div>
 </template>
 
@@ -15,14 +18,31 @@ export default {
   data() {
     return {
       uploadWidget: null,
-      uploadedImage: null
+      uploadedImage: null,
     }
   },
   methods: {
-    openWidget: function(event) {
-      debugger
+    openWidget: function (event) {
       this.uploadWidget.open()
-    }
+    },
+  },
+  mounted: function () {
+    this.uploadWidget = cloudinary.createUploadWidget(
+      {
+        cloudName: process.env.cldCloud,
+        uploadPreset: process.env.uploadPreset,
+        sources: ['local', 'url', 'image_search'],
+        googleApiKey: process.env.googleApiKey,
+        searchByRights: true,
+      },
+      (error, result) => {
+        if (!error && result && result.event === 'success') {
+          console.log('Done! Here is the image info: ', result.info)
+          this.uploadedImage = result.info
+        }
+      }
+    )
+    console.log(this.uploadWidget)
   },
   head() {
     return {
@@ -31,48 +51,23 @@ export default {
       meta: [
         {
           name: 'twitter:title',
-          content: 'Upload'
+          content: 'Upload',
         },
         {
           name: 'twitter:description',
-          content: 'Cloudinary Upload Widget'
+          content: 'Cloudinary Upload Widget',
         },
         {
           name: 'twitter:image',
-          content: 'http://placehold.it/1200x600'
+          content: 'http://placehold.it/1200x600',
         },
         {
           name: 'twitter:card',
-          content: 'summary_large_image'
-        }
+          content: 'summary_large_image',
+        },
       ],
-      script: [
-        {
-          src: 'https://widget.cloudinary.com/v2.0/global/all.js',
-          defer: true,
-          callback: () => {
-            console.log('callback for UW')
-            this.uploadWidget = cloudinary.createUploadWidget(
-              {
-                cloudName: process.env.cldCloud,
-                uploadPreset: 'vuejs-portfolio',
-                sources: ['local', 'url', 'image_search'],
-                googleApiKey: process.env.googleApiKey,
-                searchByRights: true
-              },
-              (error, result) => {
-                if (!error && result && result.event === 'success') {
-                  console.log('Done! Here is the image info: ', result.info)
-                  this.uploadedImage = result.info
-                }
-              }
-            )
-            console.log(this.uploadWidget)
-          }
-        }
-      ]
     }
-  }
+  },
 }
 </script>
 

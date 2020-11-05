@@ -35,6 +35,7 @@ export default {}
 }
 .main-menu {
   display: flex;
+  margin-top: 2rem;
 }
 .menu-item {
   padding: 10px;
@@ -43,9 +44,8 @@ export default {}
   &:last-child {
     padding-right: 0;
   }
-  font-family: 'Yatra One';
+  font-family: "Libre Franklin","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-size: 30px;
-  color: '#e4cc8c';
 }
 
 </style>

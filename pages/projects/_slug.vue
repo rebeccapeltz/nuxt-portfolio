@@ -52,19 +52,9 @@ export default {
     }
   },
 
-  mounted: function () {
-    // this.cld = cloudinary.Cloudinary.new({
-    //   cloud_name: 'picturecloud7',
-    //   secure: true,
-    // })
-    // this.demoPlayer = this.cld.videoPlayer('demo-player')
-    // this.demoPlayer.source(this.project.publicId)
-  },
+ 
   created: function () {
     console.log('slug created')
-
-    // const url = this.$cloudinary().url('sample', { crop: 'scale', width: 200 })
-    // console.log('cloudinary url', url)
   },
   computed: {
     project() {

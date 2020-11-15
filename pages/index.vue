@@ -1,12 +1,9 @@
 <template>
 <div class="inner-column">
     <div>
-        <h1 class="title">
-            Portfolio: Cats
-        </h1>
-        <h2 class="subtitle">
+        <h1 class="subtitle">
             Images and Video
-        </h2>
+        </h1>
         <LayerComponent :items="projects" />
     </div>
 </div>

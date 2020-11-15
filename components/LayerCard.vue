@@ -37,7 +37,8 @@
           background="black"
         >
           <cld-poster >
-            <cld-transformation  crop="pad"
+            <cld-transformation  
+            crop="pad"
             background="auto:border"
             height="800"
             width="1200"/>
@@ -68,13 +69,13 @@ export default {
       flex-direction: row-reverse;
     }
   }
-  .card-image {
+ .card-image {
     width: 60%;
   }
 
   .card-text {
     width: 35%;
-  }
+  } 
   .learn-btn {
     display: inline-block;
     margin-top: 0;

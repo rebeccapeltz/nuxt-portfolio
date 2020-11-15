@@ -1,7 +1,6 @@
 <template lang="html">
   <div class="inner-column">
     <h1 class="title">Projects</h1>
-
     <GridComponent :items="projects"/>
   </div>
 </template>
@@ -54,12 +53,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .item-list {
-//   color: $gray;
-//   @include standard-grid();
-// }
-.item-img {
-  width: 100%;
-  height: auto;
-}
+
 </style>

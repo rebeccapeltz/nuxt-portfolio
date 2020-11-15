@@ -16,7 +16,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .grid-component {
-//   @include standard-grid();
-// }
 </style>

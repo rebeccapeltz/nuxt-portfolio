@@ -29,8 +29,17 @@ export const state = () => ({
       publicId: 'vuejs-portfolio/cat-asleep',
       content:
         "Cat ipsum dolor sit amet, if it fits i sits if it fits, i sits. Find box a little too small and curl up with fur hanging out mesmerizing birds and 𝕄𝔼𝕆𝕎. Asdflkjaertvlkjasntvkjn (sits on keyboard) meow and walk away soft kitty warm kitty little ball of furr what the heck just happened, something feels fishy gnaw the corn cob stare at guinea pigs. Kitty power caticus cuteicus. Attack the child eat from dog's food so scratch for purr like an angel. Eat half my food and ask for more hunt anything that moves catch eat throw up catch eat throw up bad birds but sit in box i shredded your linens for you and poop in litter box, scratch the walls hiss and stare at nothing then run suddenly away.  ",
-      video:
-        'https://res.cloudinary.com/picturecloud7/video/upload/c_fill,b_black,h_800,w_1200/vuejs-portfolio/cat-asleep',
+      category: 3,
+      isFeatured: true,
+      media: 'video'
+    },
+    {
+      id: 12,
+      slug: 'project-twelve',
+      title: 'Project Twelve',
+      publicId: 'vuejs-portfolio/cat-asleep',
+      content:
+        "Cat ipsum dolor sit amet, if it fits i sits if it fits, i sits. Find box a little too small and curl up with fur hanging out mesmerizing birds and 𝕄𝔼𝕆𝕎. Asdflkjaertvlkjasntvkjn (sits on keyboard) meow and walk away soft kitty warm kitty little ball of furr what the heck just happened, something feels fishy gnaw the corn cob stare at guinea pigs. Kitty power caticus cuteicus. Attack the child eat from dog's food so scratch for purr like an angel. Eat half my food and ask for more hunt anything that moves catch eat throw up catch eat throw up bad birds but sit in box i shredded your linens for you and poop in litter box, scratch the walls hiss and stare at nothing then run suddenly away.  ",
       category: 3,
       isFeatured: true,
       media: 'video'

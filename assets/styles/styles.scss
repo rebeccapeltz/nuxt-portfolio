@@ -94,15 +94,31 @@ button {
 
 main {
   min-height: 100vh;
+  margin: 0 1rem;
 }
 
-img {
-  width: 100%;
+div.cld-image img, div.cld-video video{
+  width:100%;
   height: auto;
 }
-video {
-  width: 100%;
+nav.main-menu img{
+  width: auto;
   height: auto;
+}
+.nav-title .cld-image{
+  display: inline-block;
+}
+.nav-title {
+  .cld-image{
+    display: inline-block;
+  }
+  .logo-text{
+    display: inline-block;
+    vertical-align: super;
+    color: #d8ac52;
+    font-weight: bold;
+    font-family: "Libre Franklin","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  }
 }
 
 h1 {
@@ -147,7 +163,7 @@ p {
 }
 
 .inner-column {
-  width: 80%;
+  // width: 80%;
   max-width: 1560px;
   margin-right: auto;
   margin-left: auto;

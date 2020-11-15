@@ -15,10 +15,10 @@
     "cloudinary-core": "^2.11.3",
     "cloudinary-video-player": "^1.4.3",
     "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1",
     "node-sass": "^4.12.0",
     "nuxt": "^2.14.6",
-    "sass-loader": "^7.1.0",
-    "node-fetch": "^2.6.1"
+    "sass-loader": "^7.1.0"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.14.0",

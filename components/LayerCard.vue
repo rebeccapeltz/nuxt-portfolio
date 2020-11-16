@@ -24,7 +24,9 @@
             crop="pad"
             background="auto:border"
             height="800"
-            width="1200"
+            width="1200",
+            quality="auto",
+            fetchFormat="auto"
           />
         </cld-image>
         <cld-video
@@ -34,12 +36,15 @@
           width="1200"
           format="jpg"
           crop="pad"
-          background="black"
+          background="black" 
+          fetchFormat="auto"
         >
           <cld-poster >
             <cld-transformation  
             crop="pad"
             background="auto:border"
+            fetchFormat="auto" 
+            quality="auto" 
             height="800"
             width="1200"/>
           </cld-poster>

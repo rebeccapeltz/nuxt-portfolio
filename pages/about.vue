@@ -12,8 +12,8 @@
       >
         <cld-transformation
           crop="fill"
-          height="500"
-          width="500"
+          height="300"
+          width="300"
           gravity="auto"
         />
       </cld-image>
@@ -67,6 +67,7 @@ section.about {
   margin: auto;
 }
 figure {
+  width: 30%;
   margin: auto;
 }
 figcaption {

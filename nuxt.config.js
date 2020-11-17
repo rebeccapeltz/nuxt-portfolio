@@ -2,7 +2,7 @@ export default {
   env: {
     googleApiKey: process.env.GOOGLE_API_KEY,
     cldCloud: process.env.CLD_CLOUD,
-    uploadPreset: process.env.UPLOAD_PRESET
+    uploadPreset: process.env.UPLOAD_PRESET,
   },
   target: 'static',
   router: {
@@ -26,7 +26,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Cat Portfolio',
     meta: [
       {
         charset: 'utf-8'
@@ -38,8 +38,8 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: 'Cat Portfolio by Sasha Wolffe'
+      },
     ],
     link: [
       {
@@ -92,21 +92,19 @@ export default {
   ],
   googleFonts: {
     families: {
-      'Yatra One': true,
       'Libre Franklin': true,
-      'Libre Baskerville': true,
-      Roboto: true
+      'Libre Baskerville': true
     },
     display: 'swap'
   },
   cloudinary: {
-    cloudName: 'picturecloud7',
+    cloudName: process.env.CLD_CLOUD,
     useComponent: true
   },
   fontawesome: {
     icons: {
-      solid: true,
-      brands: true
+      solid: ['faEnvelope'],
+      brands: ['faLinkedin','faGithub','faTwitter','faInstagram','faMedium','faNpm']
     }
   },
   /*

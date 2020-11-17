@@ -26,8 +26,14 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 ## Upload Widget search key
 Obtain a key if you want to use google search in the upload widget: https://developers.google.com/custom-search/
 
-## Fill in variable.sh 
+## Local Environment Vairables 
 You can use the shell script to set up local variables referenced by `process.env` in nuxt.config.js and code by executing `variables.sh`.
+
+Alternatively add your environment variables to `.env` and execute in bash:
+
+```bash
+. ./.env
+```
 
 First update the exports with your information.
 

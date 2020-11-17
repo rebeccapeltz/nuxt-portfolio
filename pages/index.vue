@@ -1,50 +1,50 @@
 <template>
-<div class="inner-column">
+  <div class="inner-column">
     <div>
-        <h1 class="subtitle">
-            Images and Video
-        </h1>
-        <LayerComponent :items="projects" />
+      <h1 class="subtitle">Images and Video</h1>
+      <LayerComponent :items="projects" />
     </div>
-</div>
+  </div>
 </template>
 
 <script>
 import LayerComponent from '~/components/LayerComponent.vue'
 
 export default {
-    head() {
-        return {
-            title: 'Portfolio Website',
-            description: 'Home page meta description',
-            meta: [
-                {
-                    name: 'twitter:title',
-                    content: 'Portfolio Website'
-                },
-                {
-                    name: 'twitter:description',
-                    content: 'Home page meta description'
-                },
-                {
-                    name: 'twitter:image',
-                    content: 'https://placehold.it/1200x600'
-                },
-                {
-                    name: 'twitter:card',
-                    content: 'summary_large_image'
-                }
-            ]
-        }
-    },
-    components: {
-        LayerComponent
-    },
-    computed: {
-        projects() {
-            return this.$store.state.projects.all.filter(project => project.isFeatured);
-        }
+  head() {
+    return {
+      title: 'Portfolio Website',
+      description: 'Home page meta description',
+      meta: [
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Cat Portfolio',
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content:
+            'A portfolio of cat photography with images and video.',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: '/cat-portfolio.jpg',
+        },
+      ],
     }
+  },
+  components: {
+    LayerComponent,
+  },
+  computed: {
+    projects() {
+      return this.$store.state.projects.all.filter(
+        project => project.isFeatured
+      )
+    },
+  },
 }
 </script>
 
@@ -52,18 +52,18 @@ export default {
 /* Transitions using the page hook */
 .page-enter-active,
 .page-leave-active {
-    transition: all 0.30s ease;
+  transition: all 0.3s ease;
 }
 .page-enter,
 .page-leave-active {
-    opacity: 0;
-    transform-origin: 50% 50%;
+  opacity: 0;
+  transform-origin: 50% 50%;
 }
 .page-enter-active {
-  animation: acrossIn .20s ease both;
+  animation: acrossIn 0.2s ease both;
 }
 .page-leave-active {
-  animation: acrossOut .40s ease both;
+  animation: acrossOut 0.4s ease both;
 }
 @keyframes acrossIn {
   0% {

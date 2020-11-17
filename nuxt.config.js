@@ -12,9 +12,14 @@ export default {
   generate: {
     crawler: false,
     routes: [
-      '/projects/project-nine',
-      '/projects/project-ten',
-      '/projects/project-eleven'
+      '/projects/project-one',
+      '/projects/project-two',
+      '/projects/project-three',
+      '/projects/project-four',
+      '/projects/project-five',
+      '/projects/project-six',
+      '/projects/project-seven',
+      '/projects/project-eight',
     ]
   },
   /*

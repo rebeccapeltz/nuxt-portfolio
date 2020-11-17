@@ -5,22 +5,32 @@
   
 
     <figure>
-      <figcaption>Izaak Wolf</figcaption>
+      <figcaption>Sasha Wolffe</figcaption>
       <cld-image
-        publicId="vuejs-portfolio/pexels-headshot"
-        alt="Izaak Wolf"
+        publicId="vuejs-portfolio/sasha-wolffe"
+        alt="Sasha Wolffe"
       >
         <cld-transformation
           crop="fill"
           height="300"
           width="300"
-          gravity="auto"
+          gravity="center",
+          effect="sharpen:300"
         />
       </cld-image>
       
     </figure>
 
     <h2>Objectives</h2>
+    <p class="about-text">
+      Plays league of legends stare out the window. Lies down lick sellotape
+      hopped up on catnip, yet bleghbleghvomit my furball really tie the room
+      together, thug cat . Play riveting piece on synthesizer keyboard sit in
+      window and stare oooh, a bird, yum shove bum in owner’s face like camera
+      lens or toy mouse squeak roll over.
+    </p>
+
+     <h2>Experience</h2>
     <p class="about-text">
       Plays league of legends stare out the window. Lies down lick sellotape
       hopped up on catnip, yet bleghbleghvomit my furball really tie the room

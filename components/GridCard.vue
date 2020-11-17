@@ -4,7 +4,7 @@
       :to="{ name: 'projects-slug', params: { slug: item.slug } }"
       :key="item.slug"
     >
-      <cld-image v-if="item.media === 'image'" :publicId="item.publicId" height="800" width="1200">
+      <cld-image v-if="item.media === 'image'" :publicId="item.publicId" height="800" width="1200"  :alt="item.title">
         <cld-transformation
           crop="pad"
           background="auto:border"

@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="inner-column">
-    <h1 class="title">Upload Widget</h1>
+    <2 class="title">Upload Widget</h2>
     <p>Upload Images and Video</p>
     <button v-on:click="openWidget" class="cloudinary-button">
       Upload files

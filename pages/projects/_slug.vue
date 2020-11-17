@@ -2,11 +2,11 @@
   <div class="inner-column">
 
     <cld-image v-if="project.media === 'image'" :publicId="project.publicId">
-      <cld-transformation  crop="pad" background="auto:border" height="500" width="1200" />
+      <cld-transformation  crop="pad" background="auto:border" height="500" width="1200"  :alt="project.title" />
     </cld-image>
     <VideoPlayerComponent v-if="project.media === 'video'" :project="project" />
 
-    <h1 class="title">{{project.title}}</h1>
+    <h2 class="title">{{project.title}}</h2>
 
     <p>{{project.content}}</p>
   </div>

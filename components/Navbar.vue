@@ -8,6 +8,7 @@
             publicId="vuejs-portfolio/cat-logo"
             height="35"
             crop="fit"
+            alt="logo"
           />
           <span class="logo-text">Portfolio</span>
         </nuxt-link>
@@ -41,11 +42,6 @@ export default {}
   box-sizing: border-box;
 }
 
-body {
-  margin: 0px;
-   font-family: 'Libre Franklin', 'HelveticaNeue-Light', 'Helvetica Neue Light',
-    'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-}
 
 .nav {
   height: 50px;
@@ -72,14 +68,16 @@ body {
 .nav > .nav-links {
   display: inline;
   float: right;
-  font-size: 1.5rem;
+  color: #d8ac52;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Libre Franklin","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .nav > .nav-links > a {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  // color: #efefef;
   color: #d8ac52;
 }
 

@@ -50,7 +50,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://unpkg.com/cloudinary-video-player@1.4.3/dist/cld-video-player.min.css'
+          'https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.css'
       }
     ],
     script: [
@@ -64,7 +64,7 @@ export default {
           'https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.js',
         defer: true
       },
-      { src: 'https://widget.cloudinary.com/v2.0/global/all.js', defer: true }
+      // { src: 'https://widget.cloudinary.com/v2.0/global/all.js', defer: true }
     ]
   },
   /*

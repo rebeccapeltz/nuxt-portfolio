@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="inner-column">
-    <h1 class="title">Projects</h1>
+    <h2 class="title">Projects</h2>
     <GridComponent :items="projects"/>
   </div>
 </template>

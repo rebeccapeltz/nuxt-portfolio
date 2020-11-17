@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="inner-column">
-    <h1 class="title">About</h1>
+    <h2 class="title">About</h2>
     <section class="about">
   
 
@@ -65,9 +65,7 @@ p.about-text{
     margin: auto 14rem;
   }
 }
-h2 {
-  text-align: center;
-}
+
 figure {
   width: 50%;
   height: auto;

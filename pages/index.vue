@@ -1,7 +1,7 @@
 <template>
   <div class="inner-column">
     <div>
-      <h1 class="subtitle">Images and Video</h1>
+      <h2 class="subtitle">Images and Video</h2>
       <LayerComponent :items="projects" />
     </div>
   </div>

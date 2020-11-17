@@ -130,17 +130,16 @@ h1 {
   font-size: 40px;
   padding: 12px 0;
   color: #d8ac52;
-
 }
 
 h2 {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px; 
-  line-height: 1.4; 
-  letter-spacing: 0.02em; 
-  font-weight: 400;
-  padding: 10px 0;
-  font-size: 1.5rem;
+  font-family: "Libre Franklin","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 400;   
+  font-size: 2rem;
+  min-width: 480px;
+  font-size: 40px;
+  padding: 12px 0;
+  color: #d8ac52;
 }
 
 h3 {
@@ -155,12 +154,11 @@ h3 {
 
 p {
   font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px; 
-  line-height: 1.4; 
+  line-height: 1.7; 
   letter-spacing: 0.02em; 
   font-weight: 400;
   padding: 10px 0;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .inner-column {

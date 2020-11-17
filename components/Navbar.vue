@@ -72,7 +72,7 @@ body {
 .nav > .nav-links {
   display: inline;
   float: right;
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 
 .nav > .nav-links > a {

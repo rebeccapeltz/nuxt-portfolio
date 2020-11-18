@@ -1,6 +1,6 @@
 <template lang="html">
   <section class="layer-component">
-    <LayerCard v-for="item in items" :key="item.id" :item="item"/>
+    <LayerCard v-if="items" v-for="item in items" :key="item.id" :item="item"/>
   </section>
 </template>
 

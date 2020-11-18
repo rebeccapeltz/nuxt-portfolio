@@ -13,9 +13,6 @@
           fetchFormat="auto",
           quality="auto"
         />
-        <cld-transformation
-          fetch-format="auto"
-        />
       </cld-image>
 
       <cld-video

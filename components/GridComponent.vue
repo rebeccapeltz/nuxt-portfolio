@@ -1,6 +1,6 @@
 <template lang="html">
   <section class="layout-grid">
-    <GridCard v-for="item in items" :key="item.id" :item="item"/>
+    <GridCard v-if="items" v-for="item in items" :key="item.id" :item="item"/>
   </section>
 </template>
 

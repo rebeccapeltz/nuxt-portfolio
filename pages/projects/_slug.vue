@@ -9,7 +9,12 @@
         :alt="project.title"
       />
     </cld-image>
-    <VideoPlayerComponent v-if="project.media === 'video'" :project="project" />
+    <VideoPlayerComponent
+      v-if="
+        project.media === 'video' && isCldCoreLoaded && isCldVideoPlayerLoaded
+      "
+      :project="project"
+    />
 
     <h2 class="title">{{ project.title }}</h2>
 
@@ -27,7 +32,9 @@ export default {
     return {
       slug: this.$route.params.slug,
       cld: null, // Cloudinary object,
-      demoPlayer: null // video player
+      demoPlayer: null, // video player
+      isCldCoreLoaded: false,
+      isCldVideoPlayerLoaded: false
     }
   },
   head() {
@@ -36,12 +43,22 @@ export default {
       description: this.project.content,
       script: [
         {
+          hid: 'cldCore',
           src:
-            'https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.min.js'
+            'https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.min.js',
+          defer: true,
+          callback: () => {
+            this.isCldCoreLoaded = true
+          }
         },
         {
+          hid: 'cldVideoPlayer',
           src:
-            'https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.js'
+            'https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.js',
+          defer: true,
+          callback: () => {
+            this.isCldVideoPlayerLoaded = true
+          }
         }
       ],
       meta: [

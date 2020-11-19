@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="inner-column">
     <h2 class="title">Projects</h2>
-    <GridComponent :items="projects"/>
+    <GridComponent :items="projects" />
   </div>
 </template>
 
@@ -16,42 +16,40 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Project page meta description',
+          content: 'Project page meta description'
         },
         {
           name: 'twitter:title',
-          content: 'Projects | Portfolio Website',
+          content: 'Projects | Portfolio Website'
         },
         {
           name: 'twitter:description',
-          content: 'Projects page meta description',
+          content: 'Projects page meta description'
         },
         {
           name: 'twitter:image',
-          content: 'https://placehold.it/1200x600',
+          content: 'https://placehold.it/1200x600'
         },
         {
           name: 'twitter:card',
-          content: 'summary_large_image',
-        },
-      ],
+          content: 'summary_large_image'
+        }
+      ]
     }
   },
   components: {
-    GridComponent,
+    GridComponent
   },
-  pageTransition: {
-    name: 'test',
-    mode: 'out-in',
-  },
+  // pageTransition: {
+  //   name: 'test',
+  //   mode: 'out-in',
+  // },
   computed: {
     projects() {
       return this.$store.state.projects.all
-    },
-  },
+    }
+  }
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

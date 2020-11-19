@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="layer-component">
-    <LayerCard v-if="items" v-for="item in items" :key="item.id" :item="item"/>
+    Items: {{ JSON.stringify(items) }}
+    <LayerCard v-for="item in items" :key="item.id" :item="item" v-if="items" />
   </section>
 </template>
 
@@ -8,11 +9,10 @@
 import LayerCard from '~/components/LayerCard.vue'
 export default {
   components: {
-    LayerCard,
+    LayerCard
   },
-  props: ['items'],
+  props: ['items']
 }
 </script>
 
-<style lang="css" scoped>
-</style>
+<style lang="css" scoped></style>

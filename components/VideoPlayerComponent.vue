@@ -1,11 +1,12 @@
 <template lang="html">
-<div class="vp">
-   <video v-if="project.media === 'video'"
+  <div class="vp">
+    <video
+      v-if="project.media === 'video'"
       id="demo-player"
       controls
       autoplay
-      class="cld-video-player cld-fluid">
-    </video>
+      class="cld-video-player cld-fluid"
+    ></video>
   </div>
 </template>
 
@@ -19,18 +20,19 @@ export default {
     return {
       cld: null, //Cloudinary object,
       demoPlayer: null, //video player
+      externalLoaded: false
     }
   },
-  mounted: function () {
+  mounted: function() {
     if (this.project.media === 'video') {
       this.cld = cloudinary.Cloudinary.new({
         cloud_name: process.env.cldCloud,
-        secure: true,
+        secure: true
       })
       this.demoPlayer = this.cld.videoPlayer('demo-player')
       this.demoPlayer.source(this.project.publicId)
     }
-  },
+  }
 }
 </script>
 

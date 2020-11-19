@@ -19,15 +19,13 @@
           v-if="item.media === 'image'"
           :publicId="item.publicId"
           :alt="item.title"
+          crop="pad"
+          background="auto:border"
+          height="800"
+          width="1200"
+          quality="auto"
+          fetchFormat="auto"
         >
-          <cld-transformation
-            crop="pad"
-            background="auto:border"
-            height="800"
-            width="1200",
-            quality="auto",
-            fetchFormat="auto"
-          />
         </cld-image>
         <cld-video
           v-if="item.media === 'video'"
@@ -36,19 +34,18 @@
           width="1200"
           format="jpg"
           crop="pad"
-          background="black" 
+          background="black"
           fetchFormat="auto"
         >
-          <cld-poster >
-            <cld-transformation  
+          <cld-poster
             crop="pad"
             background="auto:border"
-            fetchFormat="auto" 
-            quality="auto" 
+            fetchFormat="auto"
+            quality="auto"
             height="800"
-            width="1200"/>
+            width="1200"
+          >
           </cld-poster>
-         
         </cld-video>
 
         <!-- <img :src="item.thumbnail" :alt="item.title"> -->
@@ -74,13 +71,13 @@ export default {
       flex-direction: row-reverse;
     }
   }
- .card-image {
+  .card-image {
     width: 60%;
   }
 
   .card-text {
     width: 35%;
-  } 
+  }
   .learn-btn {
     display: inline-block;
     margin-top: 0;

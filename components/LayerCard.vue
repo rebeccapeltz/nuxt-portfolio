@@ -49,7 +49,6 @@
           </cld-poster>
         </cld-video>
 
-        <!-- <img :src="item.thumbnail" :alt="item.title"> -->
       </figure>
     </nuxt-link>
   </article>

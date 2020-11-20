@@ -12,8 +12,6 @@
         :alt="item.title"
         crop="pad"
         background="auto:border"
-        height="800"
-        width="1200"
         fetchFormat="auto"
         quality="auto"
       >

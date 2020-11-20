@@ -1,10 +1,17 @@
 <template lang="html">
   <div class="inner-column">
 
-    <cld-image v-if="project.media === 'image'" :publicId="project.publicId">
-      <cld-transformation  crop="pad" background="auto:border" height="500" width="1200"  :alt="project.title" />
+    <cld-image v-if="project.media === 'image'" 
+      :publicId="project.publicId"
+      crop="pad" background="auto:border" 
+      height="500" 
+      width="1200"  
+      :alt="project.title"
+    >
     </cld-image>
-    <VideoPlayerComponent v-if="project.media === 'video'" :project="project" />
+    <VideoPlayerComponent v-if="project.media === 'video'" 
+      :project="project" 
+    />
 
     <h2 class="title">{{project.title}}</h2>
 

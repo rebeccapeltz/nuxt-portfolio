@@ -12,29 +12,6 @@ export default {
   head() {
     return {
       title: 'Projects | Portfolio Website',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Project page meta description',
-        },
-        {
-          name: 'twitter:title',
-          content: 'Projects | Portfolio Website',
-        },
-        {
-          name: 'twitter:description',
-          content: 'Projects page meta description',
-        },
-        {
-          name: 'twitter:image',
-          content: 'https://placehold.it/1200x600',
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary_large_image',
-        },
-      ],
     }
   },
   components: {

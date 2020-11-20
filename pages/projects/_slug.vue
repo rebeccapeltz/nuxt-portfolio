@@ -31,24 +31,6 @@ export default {
     return {
       title: this.project.title,
       description: this.project.content,
-      meta: [
-        {
-          name: 'twitter:title',
-          content: this.project.title,
-        },
-        {
-          name: 'twitter:description',
-          content: this.project.content,
-        },
-        {
-          name: 'twitter:image',
-          content: 'http://placehold.it/1200x600',
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary_large_image',
-        },
-      ],
     }
   },
 

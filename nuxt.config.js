@@ -54,16 +54,16 @@ export default {
       }
     ],
     script: [
-      {
-        src:
-          'https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.min.js',
-        defer: true
-      },
-      {
-        src:
-          'https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.js',
-        defer: true
-      },
+      // {
+      //   src:
+      //     'https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.min.js',
+      //   defer: true
+      // },
+      // {
+      //   src:
+      //     'https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.js',
+      //   defer: true
+      // },
       // { src: 'https://widget.cloudinary.com/v2.0/global/all.js', defer: true }
     ]
   },

@@ -2,7 +2,7 @@ export default {
   env: {
     googleApiKey: process.env.GOOGLE_API_KEY,
     cldCloud: process.env.CLD_CLOUD,
-    uploadPreset: process.env.UPLOAD_PRESET,
+    uploadPreset: process.env.UPLOAD_PRESET
   },
   target: 'static',
   router: {
@@ -19,7 +19,7 @@ export default {
       '/projects/project-five',
       '/projects/project-six',
       '/projects/project-seven',
-      '/projects/project-eight',
+      '/projects/project-eight'
     ]
   },
   /*
@@ -39,7 +39,7 @@ export default {
         hid: 'description',
         name: 'description',
         content: 'Cat Portfolio by Sasha Wolffe'
-      },
+      }
     ],
     link: [
       {
@@ -104,7 +104,14 @@ export default {
   fontawesome: {
     icons: {
       solid: ['faEnvelope'],
-      brands: ['faLinkedin','faGithub','faTwitter','faInstagram','faMedium','faNpm']
+      brands: [
+        'faLinkedin',
+        'faGithub',
+        'faTwitter',
+        'faInstagram',
+        'faMedium',
+        'faNpm'
+      ]
     }
   },
   /*

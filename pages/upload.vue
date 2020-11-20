@@ -47,25 +47,7 @@ export default {
   head() {
     return {
       title: 'Upload',
-      description: 'Cloudinary Upload Widget',
-      meta: [
-        {
-          name: 'twitter:title',
-          content: 'Upload',
-        },
-        {
-          name: 'twitter:description',
-          content: 'Cloudinary Upload Widget',
-        },
-        {
-          name: 'twitter:image',
-          content: 'http://placehold.it/1200x600',
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary_large_image',
-        },
-      ],
+      description: 'Cloudinary Upload Widget'
     }
   },
 }

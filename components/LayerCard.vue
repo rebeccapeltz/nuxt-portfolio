@@ -37,18 +37,18 @@
           background="black"
           fetchFormat="auto"
         >
-          <cld-poster>
-            <cld-transformation
-              crop="pad"
-              background="auto:border"
-              fetchFormat="auto"
-              quality="auto"
-              height="800"
-              width="1200"
-            />
+          <cld-poster
+            crop="pad"
+            background="auto:border"
+            fetchFormat="auto"
+            quality="auto"
+            height="800"
+            width="1200"
+          >
           </cld-poster>
         </cld-video>
 
+        <!-- <img :src="item.thumbnail" :alt="item.title"> -->
       </figure>
     </nuxt-link>
   </article>
